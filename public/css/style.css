@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.nav-link {
+    margin-left: 10px;
+    text-decoration: none; /* Hapus efek default dari tautan */
+    position: relative; /* Menentukan posisi elemen */
+    transition: color 0.3s ease-in-out; /* Animasi transisi warna */
+  }
+
+  .nav-link:hover {
+    color: #f8f9fa; /* Warna teks saat dihover */
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Jarak garis bawah dari teks */
+    width: 100%;
+    height: 2px; /* Ketebalan garis bawah */
+    background-color: #f8f9fa; /* Warna garis bawah */
+    transform: scaleX(0); /* Skala awal garis bawah */
+    transition: transform 0.3s ease-in-out; /* Animasi transisi skala */
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(1); /* Skala garis bawah saat dihover */
+  }
+
+.navbar-brand .logo {
+    max-height: 40px;
+    max-width: 100px;
+}
+
+.custom-jumbotron{
+    background-image: url('/img/IMG_5193.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 700px;
+    margin-top: -74px;
+}
+
+.banner{
+    margin-top: 130px;
+}
+
+
+
+.about {
+  padding: 40px 0;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+footer{
+    text-align: center;
+}
+
+@media(max-width:1024px){
+    
+    li{
+        color: black;
+    }
+
+    .custom-jumbotron{
+        margin-top: -10px;
+    }
+
+    .top{
+        padding-top: -20px;
+    }
+}
+
+
+@media(max-width:768px){
+    
+    li{
+        color: black;
+    }
+
+    .custom-jumbotron{
+        margin-top: -10px;
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    li{
+        color: black;
+    }
+    .custom-jumbotron{
+        margin-top: -10px;
+    }
+    
+
+}
+/* Tambahkan gaya lainnya sesuai kebutuhan */
